@@ -1,6 +1,11 @@
 # GenErrorSSL_2022
 Codes for "Information-Theoretic Characterization of the Generalization Error for Iterative Semi-Supervised Learning"
 
+## Main codes
+> bin_anchor_best.py AND bin_anchor_best_sgd.py: binary classfication on pairs of classes in CIFAR-10
+
+> mul_anchor_best.py: multi-class classification on MNIST
+
 ## An example to run the experiment
 ```
 CUDA_VISIBLE_DEVICES=0 python bin_anchor_best_sgd.py --exp_name bin_cifar10c19_sgd --classes 1 9 --num_labeled 500 --ratio_unlabeled 20 --SEED 111 \
